@@ -1,0 +1,51 @@
+.body2{
+    color: aliceblue;
+    position: absolute;
+    font-family:"Cambria";
+    left: 615px;
+    top:  650px;
+    align-items: center;
+    text-shadow: 2px 5px 20px rgb(235, 11, 255);
+   
+
+}
+
+.kiss{
+    display:relative;
+    width: 200px;
+    position: absolute;
+    top: -350px;
+    left: 12%;
+
+}
+
+
+@keyframes move {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(100px); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes fade {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.image-container {
+    left: 600px;
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh; /* Full viewport height */
+}
+
+.animated-image {
+    top: 500px;
+    left: 600px;
+    width: 400px; /* Adjust image size as needed */
+    height: auto; /* Maintain aspect ratio */
+    animation: move 10s infinite ease-in-out, fade 5s infinite ease-in-out; /* Apply move and fade animations */
+}
+
